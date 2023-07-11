@@ -1,0 +1,404 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&display=swap");
+:root {
+    --theme: #377dff;
+}
+
+body {
+    background-color: #182039;
+    font-family: "Poppins", sans-serif;
+}
+
+.ps_nav_ul li.ps_pd_20 {
+    transition: 0.3s;
+}
+
+.ps_nav_ul li.ps_pd_20:hover {
+    color: var(--theme);
+}
+
+.ps_nav {
+    color: #ffffffc7;
+    background: none;
+    box-shadow: none;
+    height: 89px;
+    line-height: 89px;
+}
+
+.ps_ml_5 {
+    margin-left: 5px;
+}
+
+.ps_ml_20 {
+    margin-left: 20px;
+}
+
+.ps_pd_20 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ps_nav .btn {
+    width: 87px;
+    height: 43px;
+}
+
+.btn {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    text-transform: none;
+    background-color: var(--theme);
+    color: #ffffffc7;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: var(--theme);
+}
+
+.btn span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffffc7;
+}
+
+.ps_nav .brand-logo {
+    font-weight: bold;
+    color: var(--theme);
+}
+
+.dropdown-trigger {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-trigger .material-icons {
+    font-size: 14px;
+    margin-left: 5px;
+    position: relative;
+    top: 2px;
+}
+
+.dropdown-content {
+    margin-top: 89px;
+}
+
+
+/**/
+
+.material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: "liga";
+}
+
+
+/* .ps_main_search {
+    padding-top: 50px;
+    } */
+
+    .ps_main_search .ps_input {
+        /* display: inline-block; */
+        position: relative;
+    }
+
+    .ps_main_search .ps_input input {
+        width: 100%;
+        height: 54px;
+        font-size: 16px;
+        padding-left: 30px;
+        background: #1e2745;
+        border: none;
+        outline: none;
+        color: #ffffffc7;
+        font-family: "Poppins";
+        border-radius: 10px;
+        box-sizing: border-box;
+        margin-right: 10px;
+    }
+
+    .ps_main_search .ps_input_with_icon input {
+        padding-left: 70px;
+    }
+
+    .ps_main_search .ps_input_with_icon img {
+        position: absolute;
+        left: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        pointer-events: none;
+    }
+
+    ::placeholder {
+        color: #64709a;
+        opacity: 1;
+    }
+
+    .ps_main_search button {
+        width: 114px;
+        height: 54px;
+        border-radius: 10px;
+    }
+
+
+    /* Scrollbar */
+
+    ::-webkit-scrollbar {
+        width: 10px;
+        height: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 4px rgba(255, 255, 255, 0.5);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--theme);
+        border-radius: 5px;
+    }
+
+    #ps_sidenav_trigger {
+        height: 100%;
+    }
+
+    #ps_sidenav_trigger .material-icons {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    #mobile-nav {
+        background: #212b4e !important;
+        text-align: center !important; 
+    }
+
+    #mobile-nav li:not(.divider) {
+        padding: 0px 15px;
+    }
+
+    .ps_search_btn_group {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 25px;
+        gap: 8px;
+    }
+
+    .ps_main_search_grid {
+        padding-right: 4%;
+        padding-left: 4%;
+        display: grid;
+        gap: 10px;
+        grid-template-rows: 1fr;
+        grid-template-columns: 4fr 4fr 4fr;
+    }
+
+    @media only screen and (max-width: 1201px) {
+        .ps_main_search_grid {
+            grid-template-rows: 1fr;
+            grid-template-columns: 4fr 4fr 4fr;
+        }
+    }
+
+    @media only screen and (max-width: 993px) {
+        nav .brand-logo {
+            left: 0%;
+            transform: none;
+        }
+        .ps_main_search_grid {
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 4fr;
+        }
+        .ps_search_btn_group {
+            margin-left: 0;
+        }
+    }
+
+    .modal {
+        background: #212b4e;
+    }
+
+    .loadingoverlay {
+        background: rgba(0, 0, 0, 0.5) !important;
+        backdrop-filter: blur(5px);
+    }
+
+    .modal-footer h6 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .modal-content {
+        overflow: hidden;
+    }
+
+    .switch {
+        display: inline-block;
+        height: 34px;
+        position: relative;
+        width: 60px;
+    }
+
+    .switch input {
+        display: none;
+    }
+
+    .ps_slider {
+        background-color: #182039;
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: 0.4s;
+    }
+
+    .ps_slider:before {
+        background-color: rgba(255, 255, 255, 0.5);
+        bottom: 4px;
+        content: "";
+        height: 26px;
+        left: 4px;
+        position: absolute;
+        transition: 0.4s;
+        width: 26px;
+    }
+
+    input:checked+.ps_slider {
+        background-color: var(--theme);
+    }
+
+    input:checked+.ps_slider:before {
+        transform: translateX(26px);
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    .ps_slider.round {
+        border-radius: 34px;
+    }
+
+    .ps_slider.round:before {
+        border-radius: 50%;
+    }
+
+    .ps_checkbox_wrapper {
+        position: relative;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: auto 2fr;
+        gap: 20px;
+        align-items: center;
+        margin: 10px;
+        margin-bottom: 20px;
+    }
+
+
+    /* label underline focus color */
+
+    #login-email input[type=email]:focus {
+        border-bottom: 1px solid var(--theme);
+        box-shadow: 0 1px 0 0 var(--theme);
+    }
+
+
+    /* label underline focus color */
+
+    #login-password input[type=password]:focus {
+        border-bottom: 1px solid var(--theme);
+        box-shadow: 0 1px 0 0 var(--theme);
+    }
+
+
+    /* label underline focus color */
+
+    #signup-email input[type=email]:focus {
+        border-bottom: 1px solid var(--theme);
+        box-shadow: 0 1px 0 0 var(--theme);
+    }
+
+
+    /* label underline focus color */
+
+    #signup-name input[type=text]:focus {
+        border-bottom: 1px solid var(--theme);
+        box-shadow: 0 1px 0 0 var(--theme);
+    }
+
+
+    /* label underline focus color */
+
+    #signup-password input[type=password]:focus {
+        border-bottom: 1px solid var(--theme);
+        box-shadow: 0 1px 0 0 var(--theme);
+    }
+
+
+    /* label underline focus color */
+
+    #signup-mobile input[type=text]:focus {
+        border-bottom: 1px solid var(--theme);
+        box-shadow: 0 1px 0 0 var(--theme);
+    }
+
+
+    /* label underline focus color */
+
+    #signup-cnfpassword input[type=password]:focus {
+        border-bottom: 1px solid var(--theme);
+        box-shadow: 0 1px 0 0 var(--theme);
+    }
+
+
+    .mobile_li{
+        background-color: var(--theme);
+        display: block;4
+        border-radius: 10px;
+        margin-left: 10px;
+        margin-top: 20px;
+        width: 275px !important;
+    }
+
+/* 
+label underline focus color
+
+#login-email input[type=text]:focus {
+    border-bottom: 1px solid var(--theme);
+    box-shadow: 0 1px 0 0 var(--theme);
+}
+
+
+label underline focus color
+
+#login-email input[type=text]:focus {
+    border-bottom: 1px solid var(--theme);
+    box-shadow: 0 1px 0 0 var(--theme);
+}
+
+
+label underline focus color
+
+#login-email input[type=text]:focus {
+    border-bottom: 1px solid var(--theme);
+    box-shadow: 0 1px 0 0 var(--theme);
+    } */
+
+    
