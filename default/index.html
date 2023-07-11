@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="core.css">
+    <title>PS4 - 9.00</title>
+    <!--int64-->
+    <script src="./int64.js"></script>
+    <!--kexploit-->
+    <script src="./kexploit.js"></script>
+    <!--rop-->
+    <script src="./rop.js"></script>
+    <!--webkit-->
+    <script src="./webkit.js"></script>
+    <!--Exploit-->
+    <script src="./loader.js"></script>
+    <script src="./payload.js"></script>
+    <!--Notification JS-->
+    <script>
+        function loadmsg() {
+            document.getElementById('notify').style.display = ''
+            document.getElementById('notify').className = 'notification'
+            document.getElementById('log').innerHTML = ShowMSG
+        }
+        function ani2() {
+            document.getElementById('timeout_scale').style.display = ''
+            document.getElementById("timeout_scale").className = 'timeout_scale'
+            setTimeout(ani_2, 4000)
+        }
+        function ani_2() {
+            document.getElementById('notify').className = 'notification notification2'
+            setTimeout(() => {
+                document.getElementById('notify').style.display = 'none'
+                document.getElementById('timeout_scale').style.display = 'none'
+            }, 400);
+        }
+    </script>
+</head>
+<body onload="setTimeout(poc, 1000)">
+    <!--Notification Area-->
+    <div id="notify" style="display: none;">
+        <p id="log"></p>
+        <div id="timeout_scale" style="display: none;"></div>
+    </div>
+    <!--Main-->
+    <div class="title_div">
+        <h1>PS4 Xploit 9.00</h1>
+    </div>
+    <br><br>
+    <div>
+        <button class="btn" onclick="GoldHEN212()">GoldHEN 2.1.2</button>
+        <button class="btn" onclick="GoldHEN224()">GoldHEN 2.2.4</button>
+        <button class="btn" onclick="GoldHEN23()">GoldHEN 2.3</button>
+        <button class="btn" onclick="GoldHEN24b5()">GoldHEN 2.4b5</button>
+        <br>
+        <button class="btn" onclick="app2usb()">App2USB</button>
+        <button class="btn" onclick="appdumper()">App Dumper</button>
+        <button class="btn" onclick="dbbackup()">DB Backup</button>
+        <button class="btn" onclick="dbrestore()">DB Restore</button>
+        <br>
+        <button class="btn" onclick="dupdate()">★ Disable Update</button>
+        <button class="btn" onclick="eupdate()">★ Enable Update</button>
+        <button class="btn" onclick="exitidu()">Exit IDU</button>
+        <button class="btn" onclick="kerneldumper()">Dump Kernel</button>
+        <button class="btn" onclick="moduledumper()">Dump Module</button>
+        <br>
+        <button class="btn" onclick="ps4debug()">☆ PS4 Debug</button>
+        <button class="btn" onclick="webrte()">☆ Web RTE</button>
+        <br>
+        <a href="cache.html"><button class="btn">Cache</button></a>
+    </div>
+    <div class="bottom">
+        <p>Web-Design/Developed & Hosted by <a href="https://bishalqx980.github.io/bishalqx980" style="color: rgb(0, 100, 255);">@bishalqx980</a></p>
+        <p>Many Many Thanks To All contributor's of PlayStation Jailbreak Scene</p>
+    </div>
+</body>
+</html>
