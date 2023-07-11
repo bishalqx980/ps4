@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" manifest="Cache.manifest">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caching - Please Wait!</title>
+    <style>
+        body {
+            background: url("bgimg.png");
+            background-size: cover;
+            color: rgb(255, 255, 255);
+            font-family: sans-serif;
+            text-align: center;
+            width: 90%;
+            left: 5%;
+            right: 5%;
+            margin: 0;
+            top: 50%;
+            position: absolute;
+            transform: translateY(-50%);
+        }
+        .div0 {
+            color: rgb(255, 255, 255);
+            border: solid 1px rgb(0, 150, 255);
+            box-shadow: 0px 0px 5px rgb(0, 150, 255);
+            overflow: hidden;
+        }
+        #log {
+            background-color: rgb(0, 30, 50, 0.25);
+            padding: 10px;
+        }
+    </style>
+    <!--Cache JS-->
+    <script>
+        window.applicationCache.ondownloading=function() {
+            document.getElementById("log").innerHTML="Page Caching Started!"
+        }
+        window.applicationCache.onprogress=function(a) {
+            document.getElementById("log").style.width=(Math.round(100*(a.loaded/a.total)))+"%"
+            document.getElementById("log").innerHTML=(Math.round(100*(a.loaded/a.total)))+"%"
+        }
+        window.applicationCache.oncached=function() {
+            document.getElementById("log").innerHTML="Page Cached Successfully!"
+            setTimeout(success, 1000)
+            function success() {
+                document.getElementById("log").innerHTML="Offline Cache Completed. Redirecting Please Wait..."
+                setTimeout(goback, 3000)
+            }
+            function goback() {
+                location.href="./lndex.html"
+            }
+        }
+        window.applicationCache.onnoupdate=function() {
+            document.getElementById("done").innerHTML="Page Already Cached. Redirecting Please Wait..."
+            setTimeout(goback, 0)
+
+            function goback() {
+                location.href="./lndex.html"
+            }
+        }
+        window.applicationCache.onerror=function() {
+            document.getElementById("done").innerHTML="Something Went Wrong or Page Already Cached...[Clear Web-data & try again]"
+            setTimeout(goback, 0)
+
+            function goback() {
+                location.href="./lndex.html"
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1 id="done">Please Wait, Offline Cache is on progress!</h1>
+    <div class="div0">
+        <div id="log">0%</div>
+    </div>
+    <p><b>Note:</b> After Cache proccess Completed this page will redirect to <a href="./lndex.html">lndex.html</a> page then you have to reopen the PS4 Browser! [Required for Smooth Performance]</p>
+    <p>Developed, Web-Design & Hosted by <a href="https://bishalqx980.github.io/bishalqx980/">@bishalqx980</a></p>
+</body>
+</html>

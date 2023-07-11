@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X - Auto Exploit GoldHEN 2.3</title>
+  <style>
+    body {
+      width: 80%;
+      margin: auto;
+      text-align: left;
+      background-size: cover;
+      font-family: sans-serif;
+      background-color: rgb(255, 255, 255);
+      color: rgb(50, 150, 200);
+      text-align: center;
+    }
+    hr {
+      opacity: 50%;
+    }
+    .btn {
+      width: 200px;
+      background-color: rgb(255, 255, 255);
+      color: rgb(50, 150, 200);
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0px 0px 2px rgb(0, 0, 0);
+      padding: 10px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 300ms;
+      margin-left: 2px;
+      margin-right: 2px;
+      margin-bottom: 2px;
+      margin-top: 2px;
+    }
+    .btn:hover {
+      background-color: rgb(220, 220, 220);
+    }
+    a {
+      color: rgb(50, 150, 200);
+    }
+  </style>
+  <script src="loader.js"></script>
+  <script src="int64.js"></script>
+  <script src="rop.js"></script>
+  <script src="kexploit.js"></script>
+  <script src="webkit.js"></script>
+  <script>
+  function load_exploit(){
+    // Jailbreak Related
+    document.getElementById('log').innerHTML ='Loading... Please Wait !!!'; 
+    setTimeout(poc, 500);
+  }
+  function exploit_done() {
+    document.getElementById("log").innerHTML = "Jailbreak Done! Now load payloads!!";
+  }
+  </script>
+</head>
+<body onload="load_exploit()">
+  <h1 id="log"></h1>
+  <hr><br>
+  <button class="btn" onclick="execute('goldhen23.bin');">GoldHEN 2.3</button>
+  <br>
+  <div>
+    <h3>by <a href="https://bishalqx980.github.io/bishalqx980/">@bishalqx980</a></h3>
+  </div>
+</body>
+</html>
