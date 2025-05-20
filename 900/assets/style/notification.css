@@ -1,24 +1,24 @@
 .notification {
     width: 400px;
     max-width: 80%;
-    text-align: center;
     top: 1%;
-    right: 1%;
+    left: 0%;
     position: fixed;
-    background-color: rgb(32, 33, 36);
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border: none;
-    border-radius: 100px;
     padding: 10px;
+    font-family: sans-serif;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: lighter;
+    text-align: center;
     box-shadow: 0px 0px 5px rgb(100, 100, 100);
     animation: slide 500ms;
 }
 
 @keyframes slide {
     from {
-        transform: translateX(150%);
+        transform: translateX(-150%);
     }
     to {
         transform: translateX(0%);
@@ -34,7 +34,7 @@
         transform: translateX(0%);
     }
     to {
-        transform: translateX(120%);
+        transform: translateX(-150%);
     }
 }
 
@@ -48,7 +48,7 @@
     position: absolute;
     padding: 2px;
     border-radius: 10px;
-    animation: timeout 4000ms linear;
+    animation: timeout 2500ms linear;
 }
 
 @keyframes timeout {
