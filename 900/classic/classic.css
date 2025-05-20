@@ -1,0 +1,159 @@
+body {
+    background-color: rgb(255, 255, 255);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/*Notification Start*/
+.notification {
+    display: flex;
+    width: 450px;
+    text-align: left;
+    top: 2%;
+    right: -1%;
+    position: fixed;
+    background-color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.5);
+    animation: slide 500ms;
+}
+@keyframes slide {
+    from {
+        transform: translateX(150%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+.notification2 {
+    animation: slide2 500ms;
+}
+@keyframes slide2 {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(120%);
+    }
+}
+.ps_logo_notification {
+    width: 72px;
+    height: 64px;
+    margin-right: 2%;
+}
+.timeout_scale {
+    background-color: rgb(0, 100, 255);
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    padding: 2px;
+    border-radius: 10px;
+    animation: timeout 4000ms linear;
+}
+@keyframes timeout {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0%;
+    }
+}
+/*Notification Done*/
+/*Head*/
+.head_main_div {
+    display: flex;
+    background-color: rgb(240, 240, 240);
+    border: solid 1px rgb(200, 200, 200);
+}
+.head_title_div {
+    flex: 100%;
+}
+.head_btn_div {
+    flex: 0%;
+}
+.head_btn {
+    background-color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    height: 100%;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+.head_btn:hover {
+    background-color: rgb(255, 255, 255);
+}
+/*Nomad*/
+.nomad_div {
+    margin-top: 5px;
+    margin-right: 5px;
+    right: 0;
+    position: fixed;
+    width: 40%;
+    background-color: rgb(240, 240, 240);
+    border: none 1px rgb(200, 200, 200);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.5);
+}
+/*Middle*/
+.middle_div {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+}
+a {
+    color: rgb(50, 100, 255);
+}
+hr {
+    margin-left: 0%;
+    width: 50%;
+    opacity: 50%;
+}
+/*Bottom*/
+.bottom_div {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    border: solid 1px rgb(200, 200, 200);
+    padding: 10px;
+    text-align: center;
+}
+.btn {
+    background-color: rgb(240, 240, 240);
+    color: rgb(0, 0, 0);
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: solid 1px rgb(200, 200, 200);
+    border-radius: 4px;
+    padding: 4px;
+    margin-bottom: 0.5%;
+    transition-duration: 150ms;
+    box-shadow: 2px 2px 2px;
+    cursor: pointer;
+}
+.btn:hover {
+    box-shadow: 0px 0px 0px;
+}
+/*Commom Value*/
+.red {
+    color: rgb(255, 0, 0);
+}
+.green {
+    color: rgb(0, 180, 0);
+}
+.blue {
+    color: rgb(50, 100, 255);
+}

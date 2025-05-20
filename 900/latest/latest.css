@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(32, 33, 36);
+    color: rgb(255, 255, 255);
+    width: 100%;
+    margin: auto;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.title_div {
+    background-color: rgb(53, 54, 58);
+    margin: auto;
+    padding: 10px;
+    box-shadow:  0px 0px 20px rgb(255, 0, 100);
+}
+
+.btn {
+    width: 200px;
+    margin-top: 1%;
+    margin-left: 1%;
+    background-color: rgb(53, 54, 58);
+    color: rgb(255, 255, 255);
+    border: solid 1px rgb(53, 54, 58);
+    border-radius: 100px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow:  0px 0px 20px rgb(255, 0, 100);
+}
+
+.goldhen {
+    color: rgb(255, 215, 0);
+    text-shadow: 0px 0px 10px;
+}
+
+.goldhen:hover {
+    box-shadow:  0px 0px 20px rgb(255, 215, 0);
+}
+
+.game_mods {
+    width: 300px;
+}
+
+.bottom {
+    bottom: 1%;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    right: 10%;
+    margin: auto;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgb(100, 100, 100);
+    padding: 5px;
+}

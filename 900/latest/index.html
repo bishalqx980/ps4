@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS4 - 9.00</title>
+    <link rel="stylesheet" href="latest.css">
+    <link rel="stylesheet" href="../assets/style/notification.css">
+
+    <script src="../assets/scripts/int64.js"></script>
+    <script src="../assets/scripts/kexploit.js"></script>
+    <script src="../assets/scripts/rop.js"></script>
+    <script src="../assets/scripts/webkit.js"></script>
+
+    <script src="../assets/scripts/auxiliary.js"></script>
+    <script src="./latest.js"></script>
+</head>
+<body onload="runExploit()">
+    <!--Notification Area-->
+    <div id="notify" style="display: none;">
+        <p id="log"></p>
+        <div id="timeout_scale" style="display: none;"></div>
+    </div>
+    <!--Main-->
+    <div class="title_div">
+        <h1>PS4 Xploit 9.00</h1>
+    </div>
+    <br><br>
+
+    <div>
+        <h1 id="tmp_startup_txt">Exploit is Running...</h1>
+        <div id="btn_div" style="display: none;">
+            <button class="btn goldhen" onclick="sendPayload('../assets/payloads/goldhen/GoldHEN212.bin')">GoldHEN 2.1.2</button>
+            <button class="btn goldhen" onclick="sendPayload('../assets/payloads/goldhen/GoldHEN224.bin')">GoldHEN 2.2.4</button>
+            <button class="btn goldhen" onclick="sendPayload('../assets/payloads/goldhen/GoldHEN23.bin')">GoldHEN 2.3</button>
+            <button class="btn goldhen" onclick="sendPayload('../assets/payloads/goldhen/GoldHEN24b5.bin')">GoldHEN 2.4b5</button>
+            <button class="btn goldhen" onclick="sendPayload('../assets/payloads/goldhen/GoldHEN24b183.bin')">GoldHEN 2.4b18.3</button>
+
+            <br>
+            <button class="btn" onclick="showdiv('payloads_div')">Other Payloads</button>
+            <button class="btn" onclick="showdiv('gamemods_div')">Game Mods</button>
+            <button class="btn" onclick="showdiv('linux_loaders')">Linux Loaders</button>
+
+            <div id="payloads_div" style="display: none;">
+                <button class="btn" onclick="sendPayload('../assets/payloads/app2usb.bin')">App2USB</button>
+                <button class="btn" onclick="sendPayload('../assets/payloads/app_dumper.bin')">App Dumper</button>
+                <button class="btn" onclick="sendPayload('../assets/payloads/d_update.bin')">★ Disable Update</button>
+                <button class="btn" onclick="sendPayload('../assets/payloads/e_update.bin')">★ Enable Update</button>
+                <br>
+                <button class="btn" onclick="sendPayload('../assets/payloads/db_backup.bin')">DB Backup</button>
+                <button class="btn" onclick="sendPayload('../assets/payloads/db_restore.bin')">DB Restore</button>
+                <button class="btn" onclick="sendPayload('../assets/payloads/exit_idu.bin')">Exit IDU</button>
+                <button class="btn" onclick="sendPayload('../assets/payloads/disable_aslr.bin')">Disable ASLR</button>
+                <br>
+                <button class="btn" onclick="sendPayload('../assets/payloads/kernel_dumper.bin')">Kernel Dumper</button>
+                <button class="btn" onclick="sendPayload('../assets/payloads/module_dumper.bin')">Module Dumper</button>
+                <button class="btn" onclick="sendPayload('../assets/payloads/OrbisToolbox.bin')">Orbis ToolBox</button>
+                <button class="btn" onclick="sendPayload('../assets/payloads/permanent_uart.bin')">Permanent UART</button>
+                <br>
+                <button class="btn" onclick="sendPayload('../assets/payloads/rifrenamer.bin')">RIF Renamer</button>
+                <button class="btn" onclick="sendPayload('../assets/payloads/todex.bin')">To-DEX</button>
+                <button class="btn" onclick="sendPayload('../assets/payloads/ps4debug.bin')">☆ PS4 Debug</button>
+                <button class="btn" onclick="sendPayload('../assets/payloads/webrte.bin')">☆ Web RTE</button>
+            </div>
+
+            <div id="gamemods_div" style="display: none;">
+                <button class="btn game_mods" onclick="sendPayload('../assets/payloads/gta_mods/BeefQueefMod100.bin')">GTAV v1.00: BeefQueefMod</button>
+                <button class="btn game_mods" onclick="sendPayload('../assets/payloads/gta_mods/BeefQueefMod134.bin')">GTAV v1.34: BeefQueefMod</button>
+                <button class="btn game_mods" onclick="sendPayload('../assets/payloads/gta_mods/BeefQueefMod138.bin')">GTAV v1.38: BeefQueefMod</button>
+                <br>
+                <button class="btn game_mods" onclick="sendPayload('../assets/payloads/gta_mods/GTAVAG127.bin')">GTAV v1.27: AG</button>
+                <button class="btn game_mods" onclick="sendPayload('../assets/payloads/gta_mods/GTAVAG132.bin')">GTAV v1.32: AG</button>
+                <button class="btn game_mods" onclick="sendPayload('../assets/payloads/gta_mods/GTAVAG133.bin')">GTAV v1.33: AG</button>
+                <br>
+                <button class="btn game_mods" onclick="sendPayload('../assets/payloads/rdr2_mods/OystersMenuRDR2v138_v100.bin')">RDR2 v1.00: OystersMenuV1.38</button>
+                <button class="btn game_mods" onclick="sendPayload('../assets/payloads/rdr2_mods/OystersMenuRDR2v138_v113.bin')">RDR2 v1.13: OystersMenu</button>
+                <button class="btn game_mods" onclick="sendPayload('../assets/payloads/rdr2_mods/OystersMenuRDR2v138_v119.bin')">RDR2 v1.19: OystersMenu</button>
+                <br>
+                <button class="btn game_mods" onclick="sendPayload('../assets/payloads/rdr2_mods/OystersMenuRDR2v138_v124.bin')">RDR2 v1.24: OystersMenu</button>
+                <button class="btn game_mods" onclick="sendPayload('../assets/payloads/rdr2_mods/OystersMenuRDR2v138_v129.bin')">RDR2 v1.29: OystersMenu</button>
+            </div>
+
+            <div id="linux_loaders" style="display: none;">
+                <button class="btn" onclick="sendPayload('../assets/payloads/linux/LinuxLoader1gb.bin')">Linux 1GB</button>
+                <button class="btn" onclick="sendPayload('../assets/payloads/linux/LinuxLoader2gb.bin')">Linux 2GB</button>
+                <button class="btn" onclick="sendPayload('../assets/payloads/linux/LinuxLoader3gb.bin')">Linux 3GB</button>
+                <button class="btn" onclick="sendPayload('../assets/payloads/linux/LinuxLoader4gb.bin')">Linux 4GB</button>
+                <button class="btn" onclick="sendPayload('../assets/payloads/linux/LinuxLoader5gb.bin')">Linux 5GB</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom">
+        <p>Web-Design/Developed & Hosted by <a href="https://bishalqx980.github.io/bishalqx980" style="color: rgb(0, 100, 255);">@bishalqx980</a></p>
+        <p>Many Many Thanks To All contributor's of PlayStation Jailbreak Scene</p>
+    </div>
+</body>
+</html>

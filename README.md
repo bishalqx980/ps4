@@ -1,16 +1,12 @@
-# PS4 Jailbreak HOST by [@bishalqx980](https://bishalqx980.github.io/bishalqx980/)
--> Project from 2022
--> republished on 11/07/23 https://bishalqx980.github.io/ps4/
--------------------------------------
+# PlayStation 4 Jailbreak HOST's by [@bishalqx980](https://bishalqx980.github.io/bishalqx980/)
 
-◉ Classic - [https://bishalqx980.github.io/ps4/classic/](https://bishalqx980.github.io/ps4/classic/)
-<br>
-◉ Default - [https://bishalqx980.github.io/ps4/default/](https://bishalqx980.github.io/ps4/default/)
-<br>
-◉ Normal - [https://bishalqx980.github.io/ps4/normal/](https://bishalqx980.github.io/ps4/normal/)
-<br>
-◉ PlayGround FW 1.76 - [https://bishalqx980.github.io/ps4/playground_176/](https://bishalqx980.github.io/ps4/playground_176/)
-<br>
-◉ WEED - [https://bishalqx980.github.io/ps4/weed/](https://bishalqx980.github.io/ps4/weed/)
-<br>
-◉ X - [https://bishalqx980.github.io/ps4/x/](https://bishalqx980.github.io/ps4/x/)
+- 13-07-2022 : Project Started. [FW 7.xx & 9.00]
+- 11-07-2023 : Organized/Combined Project. [FW 1.76 & 9.00]
+- 20-05-2025 : Restructured & Optimized codes. [FW 9.00] (ONLY ONE HOST IS ALIVE FOR NOW: Other will be alive soon...)
+
+<hr>
+
+> # [Website 'Jailbreak HOSTs'](https://bishalqx980.github.io/ps4)
+
+# Credits
+*Many Many Thanks To All contributor's of PlayStation Jailbreak Scene*

@@ -1,0 +1,61 @@
+.notification {
+    width: 400px;
+    max-width: 80%;
+    text-align: center;
+    top: 1%;
+    right: 1%;
+    position: fixed;
+    background-color: rgb(32, 33, 36);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 100px;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0px 0px 5px rgb(100, 100, 100);
+    animation: slide 500ms;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(150%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+.notification2 {
+    animation: slide2 500ms;
+}
+
+@keyframes slide2 {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(120%);
+    }
+}
+
+.timeout_scale {
+    background-color: rgb(0, 100, 255);
+    width: 0%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 0;
+    position: absolute;
+    padding: 2px;
+    border-radius: 10px;
+    animation: timeout 4000ms linear;
+}
+
+@keyframes timeout {
+    from {
+        width: 80%;
+    }
+    to {
+        width: 0%;
+    }
+}
